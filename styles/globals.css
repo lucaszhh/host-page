@@ -1,6 +1,6 @@
-@import url("./header.css");
-@import url("./cards.css");
-@import url("./banner.css");
+@import url(./header.css);
+@import url(./cards.css);
+@import url(./banner.css);
 
 *{
     margin: 0;
@@ -8,8 +8,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color-primario: #8C3E11;
+    --color-secundario: #172601;
+}
+
+
 body{
-    background-color: pink;
+    background-color: var(--color-primario);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -21,3 +27,7 @@ a{
 ul{
     list-style: none;
 }
+
+
+
+
