@@ -1,8 +1,9 @@
 footer{
     background-color: var(--color-secundario);
     text-align: center;
-    color: var(--color-white);
+    color: var(--color-terciario);
     padding: 20px;
+    margin-top: 40px;
 }
 
 footer p{

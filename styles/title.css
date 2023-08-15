@@ -1,0 +1,25 @@
+/* Estilos globales */
+/* title */
+.titleContainer{
+    margin: 40px 0;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.title-reverse{
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 100px;
+    color: var(--color-terciario);
+    transition: all 300ms ease-in-out;
+}
+
+
+.title:hover{
+    text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
+}
+

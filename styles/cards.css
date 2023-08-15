@@ -1,24 +1,28 @@
-.listadoCartas {
+.containerListadoProyectos{
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
     justify-content: center;
-    margin: 20px;
 }
 
+.listadoProyectos, .listadoTopProyectos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
 
-/* cartas chat gpt */
 
 .card {
     width: 300px;
     border-radius: 10px;
-    background-color: var(--color-white);
+    background-color: var(--color-terciario);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 300ms ease-in-out;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
     transform: scale(1.02);
 }
 
@@ -43,10 +47,16 @@
     margin-bottom: 0;
 }
 
+.card .buttonera{
+    display: flex;
+    gap: 16px;
+} 
+
 .card .button {
     text-align: center;
     display: inline-block;
-    padding: 10px 20px;
+    width: 50%;
+    padding: 16px;
     background-color: var(--color-secundario);
     color: white;
     text-decoration: none;
