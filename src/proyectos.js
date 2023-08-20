@@ -85,13 +85,7 @@ const proyects = [
     },
 ]
 
-/* Nodos capturados */
-const divlistadoProyectos = document.querySelector(".listadoProyectos")
-const divlistadoTopProyectos = document.querySelector(".listadoTopProyectos")
-
 /* Función que recorre el array */
-
-
 function renderProjects(projects, containerSelector) {
     const container = document.querySelector(containerSelector);
 
@@ -117,3 +111,46 @@ renderProjects(proyects, ".listadoProyectos");
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
 renderProjects(topProyects, ".listadoTopProyectos");
+
+// Escucha el evento de click en el botón
+document.getElementById('show-alert').addEventListener('click', () => {
+    // Muestra el SweetAlert
+    Swal.fire({
+        title: '¡Hola!',
+        text: 'Este es un SweetAlert personalizado.',
+        icon: 'info',
+        confirmButtonText: 'Ok'
+    });
+});
+
+document.getElementById('contact-button').addEventListener('click', () => {
+    Swal.fire({
+      title: '¡Contáctame!',
+      html: `
+        <p>Puedes contactarme a través de mis redes sociales:</p>
+        <ul class="listItemAlert">
+          <li>
+          <a target="_blank" href="https://www.linkedin.com/in/lucas-zarandon/" >
+            <i class="fa-brands fa-github-alt"></i>
+            GitHub
+          </a>
+          </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/lucaszhh" >
+                <i class="fa-brands fa-linkedin-in"></i>
+                Linkedin
+            </a>
+          </li>
+          <!-- Agrega más redes sociales si es necesario -->
+        </ul>
+      `,
+      icon: 'info', // No es necesario en este caso
+      confirmButtonText: 'Cerrar',
+      showCancelButton: false,
+      showCloseButton: true,
+      focusConfirm: false,
+      width: 'auto'
+    });
+  });
+  

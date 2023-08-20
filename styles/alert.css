@@ -1,0 +1,15 @@
+.listItemAlert{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px 0;
+}
+
+.listItemAlert li a{
+    display: flex;
+    flex-direction: column;
+}
+
+.listItemAlert i{
+    font-size: 40px;
+}
