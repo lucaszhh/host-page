@@ -1,9 +1,12 @@
 footer{
     background-color: var(--color-secundario);
-    text-align: center;
     color: var(--color-terciario);
     padding: 20px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p{
@@ -16,6 +19,7 @@ footer i{
     transition: all 300m s;
 }
 
-footer i:hover{
-    color: var(--color-primario);
+footer nav.navSocial i:hover{
+    color: var(--color-terciario);
+    text-shadow: 2px 2px 2px var(--color-primario);
 }

@@ -23,3 +23,13 @@
     text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
 }
 
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 950px) {
+    .title{
+        text-align: center;
+        font-size: 40px; /* Tamaño adecuado para dispositivos móviles */
+    }
+    .titleContainer{
+        justify-content: center;
+    }
+}

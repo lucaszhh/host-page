@@ -1,69 +1,42 @@
 const topProyects = [
     {
         id: 1,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        name: "Portfolio",
+        description: "HELLOW! I'M DONATO ROBLEDO a young programmer who inspires to be Frontend and Full Stack",
+        img: "../images/conectar-lab.png",
+        developer: "Donato Robledo",
+        urlGitHub: "https://github.com/MiniDonny/My-Portfolio",
+        urlWeb: "https://minidonny.github.io/My-Portfolio/#"
     },
     {
         id: 2,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        name: "EPIC GAMES",
+        description: "Copia del sitio EPIC GAMES todos los derechos reservados epicgames.com kkkk",
+        img: "../images/conectar-lab.png",
+        developer: "Tadeo",
+        urlGitHub: "https://github.com/TadeoLuffi/header",
+        urlWeb: "https://tadeoluffi.github.io/header/"
     },
     {
         id: 3,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        name: "Cartas de Messi",
+        description: "Las mejores cartas de Messi",
+        img: "../images/conectar-lab.png",
+        developer: "Tadeo",
+        urlGitHub: "https://github.com/TadeoLuffi/Carta-Messi",
+        urlWeb: "https://tadeoluffi.github.io/Carta-Messi/"
     },
 ]
 
 const proyects = [
     {
-        id: 1,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
-    },
-    {
-        id: 2,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
-    },
-    {
-        id: 3,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
-    },
-    {
         id: 4,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        name: "Deportes Argentino",
+        description: "Generador de cartas de deportes argentinos",
+        img: "../images/casa-del-futuro.png",
+        developer: "Cristian",
+        urlGitHub: "https://github.com/Cristian7v/13_clase",
+        urlWeb: "https://cristian7v.github.io/13_clase/"
     },
     {
         id: 5,
@@ -83,6 +56,33 @@ const proyects = [
         urlGitHub: "#",
         urlWeb: "#"
     },
+    {
+        id: 7,
+        name: "",
+        description: "",
+        img: "../images/pagina.avif",
+        developer: "",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 8,
+        name: "",
+        description: "",
+        img: "../images/pagina.avif",
+        developer: "",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 9,
+        name: "",
+        description: "",
+        img: "../images/pagina.avif",
+        developer: "",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
 ]
 
 /* Función que recorre el array */
@@ -91,14 +91,16 @@ function renderProjects(projects, containerSelector) {
 
     projects.forEach((project) => {
         container.innerHTML += `
-            <article class="card pattern-cross-dots-xl bg-primary text-white" key=${project.id}>
+            <article class="card" key=${project.id}>
                 <img src=${project.img} alt="Imagen del proyecto">
                 <div class="info">
                     <h2>${project.name}</h2>
+                    <p>${project.description}</p>
                     <p>Creador: ${project.developer}</p>
                     <div class="buttonera">
-                        <a href=${project.urlGitHub} class="button">Ver repositorio</a>
-                        <a href=${project.urlWeb} class="button">Visitar sitio</a>
+                        <a class="button ver-mas" key=${project.id}>Ver mas</a>
+                        <a class="button btn2" target="_blank" href=${project.urlWeb} >Visitar sitio</a>
+                        <a class="button btn1" target="_blank" href=${project.urlGitHub} ><i class="fa-brands fa-github-alt"></i></a>
                     </div>    
                 </div>
             </article>
@@ -112,18 +114,8 @@ renderProjects(proyects, ".listadoProyectos");
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
 renderProjects(topProyects, ".listadoTopProyectos");
 
-// Escucha el evento de click en el botón
-document.getElementById('show-alert').addEventListener('click', () => {
-    // Muestra el SweetAlert
-    Swal.fire({
-        title: '¡Hola!',
-        text: 'Este es un SweetAlert personalizado.',
-        icon: 'info',
-        confirmButtonText: 'Ok'
-    });
-});
 
-document.getElementById('contact-button').addEventListener('click', () => {
+document.querySelector(".alert-contacto").addEventListener('click', () => {
     Swal.fire({
       title: '¡Contáctame!',
       html: `
@@ -145,7 +137,6 @@ document.getElementById('contact-button').addEventListener('click', () => {
           <!-- Agrega más redes sociales si es necesario -->
         </ul>
       `,
-      icon: 'info', // No es necesario en este caso
       confirmButtonText: 'Cerrar',
       showCancelButton: false,
       showCloseButton: true,
@@ -154,3 +145,20 @@ document.getElementById('contact-button').addEventListener('click', () => {
     });
   });
   
+// Agregar controlador de eventos para los botones "Ver mas"
+const verMasButtons = document.querySelectorAll('.ver-mas');
+verMasButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        const key = event.target.getAttribute('key');
+        const card = document.querySelector(`[key="${key}"]`);
+        const buttonText = card.querySelector('.ver-mas');
+        
+        if (card.classList.contains('expanded')) {
+            card.classList.remove('expanded');
+            buttonText.textContent = 'Ver más';
+        } else {
+            card.classList.add('expanded');
+            buttonText.textContent = 'Ver menos';
+        }
+    });
+});

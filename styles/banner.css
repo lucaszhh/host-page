@@ -19,21 +19,32 @@
 @keyframes title1{
     0%{}
     25%{
-        text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
+        text-shadow: 4px 4px 0px var(--color-sombra-primario), -4px -4px 0px var(--color-sombra-secundario);
     }
     100%{}
 }
 @keyframes title2{
     0%{}
     50%{
-        text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
+        text-shadow: 4px 4px 0px var(--color-sombra-primario), -4px -4px 0px var(--color-sombra-secundario);
     }
     100%{}
 }
 @keyframes title3{
     0%{}
     75%{
-        text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
+        text-shadow: 4px 4px 0px var(--color-sombra-primario), -4px -4px 0px var(--color-sombra-secundario);
     }
     100%{}
 }
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 764px) {
+    .bannerText{
+        text-align: center;
+        padding: 8px;
+    }
+}
+
+
+

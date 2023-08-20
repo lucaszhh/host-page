@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: default;
 }
 
 :root{
@@ -35,9 +36,6 @@ ul{
 }
 
 
-
-
-
 /* social media navbar */
 nav.navSocial{
     display: flex;
@@ -54,4 +52,19 @@ nav.navSocial i:hover{
     color: var(--color-secundario); 
     font-size: 40px;
     text-shadow: 2px 2px 2px var(--color-terciario);
+}
+
+
+/* Consulta de medios para tablet */
+@media (max-width: 950px)  {
+    h1 {
+        font-size: 40px; 
+    }
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 380px) {
+    h1 {
+        font-size: 30px; 
+    }
 }
