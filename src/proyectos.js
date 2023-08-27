@@ -40,48 +40,75 @@ const proyects = [
     },
     {
         id: 5,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        name: "Mi banda favorita",
+        description: "Fanpage que contiene una presentación de los integrantes de One Direction",
+        img: "../images/casa-del-futuro.png",
+        developer: "Lucía Figueroa",
+        urlGitHub: "https://github.com/luufigueroa8/bandafav",
+        urlWeb: "https://luufigueroa8.github.io/bandafav/"
     },
     {
         id: 6,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        name: "Pequeñas Amistades",
+        description: "Página dedicada a la venta de productos",
+        img: "../images/casa-del-futuro.png",
+        developer: "Lorena Alenda",
+        urlGitHub: "https://github.com/Lorenalenda/Pequenia-Amistades",
+        urlWeb: "https://lorenalenda.github.io/Pequenia-Amistades/"
     },
     {
         id: 7,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        name: "Página de Hamburguesas",
+        description: "Página web de Hamburguesas, mostrando 3 cartas con su descripción.",
+        img: "../images/casa-del-futuro.png",
+        developer: "Jerónimo",
+        urlGitHub: "https://github.com/JeroAsenjo/Integracion",
+        urlWeb: "https://jeroasenjo.github.io/Integracion/"
     },
     {
         id: 8,
-        name: "",
+        name: "Generador de Animales",
         description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        img: "../images/casa-del-futuro.png",
+        developer: "Lorena Alenda",
+        urlGitHub: "https://github.com/Lorenalenda/Generador-de-Animales",
+        urlWeb: "https://lorenalenda.github.io/Generador-de-Animales/"
     },
     {
-        id: 9,
-        name: "",
-        description: "",
-        img: "../images/pagina.avif",
-        developer: "",
-        urlGitHub: "#",
-        urlWeb: "#"
+        id: 10,
+        name: "My Favorites Singers",
+        description: "This page is about my top favorite singers and their songs ",
+        img: "../images/conectar-lab.png",
+        developer: "Donato Robledo",
+        urlGitHub: "https://github.com/MiniDonny/My-Favorite-Singers",
+        urlWeb: "https://minidonny.github.io/My-Favorite-Singers/"
+    },
+    {
+        id: 11,
+        name: "nicomusic",
+        description: "Hice algo sobre mis cantantes favoritos tanto como su música",
+        img: "../images/conectar-lab.png",
+        developer: "Nicolas",
+        urlGitHub: "https://github.com/MANGASNICO/nicomusic.git",
+        urlWeb: "https://mangasnico.github.io/nicomusic/"
+    },
+    {
+        id: 12,
+        name: "Curriculum vitae",
+        description: "Lo hice yo xd",
+        img: "../images/conectar-lab.png",
+        developer: "Nicolas",
+        urlGitHub: "https://github.com/MANGASNICO/curriculum2.git",
+        urlWeb: "https://mangasnico.github.io/curriculum2/"
+    },
+    {
+        id: 13,
+        name: "Akatsuki",
+        description: "Si te ries pierdes",
+        img: "../images/conectar-lab.png",
+        developer: "Bruno",
+        urlGitHub: "https://github.com/brunodios/Akatsuki",
+        urlWeb: "https://brunodios.github.io/Akatsuki/"
     },
 ]
 
