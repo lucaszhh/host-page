@@ -13,8 +13,8 @@
 }
 
 :root{
-    --color-primario: #38B6FF;
-    --color-secundario: #002a43;
+    --color-primario: #800080cb;
+    --color-secundario: #800080;
     --color-terciario: #FFFFFF;
     --color-sombra-primario: #FF0000; 
     --color-sombra-secundario: #0000FF;
@@ -24,6 +24,11 @@
 body{
     background-color: var(--color-primario);
     font-family: 'Montserrat', sans-serif;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 500px;
 }
 
 a{

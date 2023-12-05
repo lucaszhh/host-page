@@ -5,6 +5,7 @@ const topProyects = [
         description: "HELLOW! I'M DONATO ROBLEDO a young programmer who inspires to be Frontend and Full Stack",
         img: "../images/conectar-lab.png",
         developer: "Donato Robledo",
+        curso: "",
         urlGitHub: "https://github.com/MiniDonny/My-Portfolio",
         urlWeb: "https://minidonny.github.io/My-Portfolio/#"
     },
@@ -14,6 +15,7 @@ const topProyects = [
         description: "Copia del sitio EPIC GAMES todos los derechos reservados epicgames.com kkkk",
         img: "../images/conectar-lab.png",
         developer: "Tadeo",
+        curso: "",
         urlGitHub: "https://github.com/TadeoLuffi/header",
         urlWeb: "https://tadeoluffi.github.io/header/"
     },
@@ -23,6 +25,7 @@ const topProyects = [
         description: "Las mejores cartas de Messi",
         img: "../images/conectar-lab.png",
         developer: "Tadeo",
+        curso: "",
         urlGitHub: "https://github.com/TadeoLuffi/Carta-Messi",
         urlWeb: "https://tadeoluffi.github.io/Carta-Messi/"
     },
@@ -33,8 +36,9 @@ const proyects = [
         id: 4,
         name: "Deportes Argentino",
         description: "Generador de cartas de deportes argentinos",
-        img: "../images/casa-del-futuro.png",
+        img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Cristian",
+        curso: "",
         urlGitHub: "https://github.com/Cristian7v/13_clase",
         urlWeb: "https://cristian7v.github.io/13_clase/"
     },
@@ -44,6 +48,7 @@ const proyects = [
         description: "Fanpage que contiene una presentación de los integrantes de One Direction",
         img: "../images/casa-del-futuro.png",
         developer: "Lucía Figueroa",
+        curso: "",
         urlGitHub: "https://github.com/luufigueroa8/bandafav",
         urlWeb: "https://luufigueroa8.github.io/bandafav/"
     },
@@ -53,6 +58,7 @@ const proyects = [
         description: "Página dedicada a la venta de productos",
         img: "../images/casa-del-futuro.png",
         developer: "Lorena Alenda",
+        curso: "",
         urlGitHub: "https://github.com/Lorenalenda/Pequenia-Amistades",
         urlWeb: "https://lorenalenda.github.io/Pequenia-Amistades/"
     },
@@ -62,6 +68,7 @@ const proyects = [
         description: "Página web de Hamburguesas, mostrando 3 cartas con su descripción.",
         img: "../images/casa-del-futuro.png",
         developer: "Jerónimo",
+        curso: "",
         urlGitHub: "https://github.com/JeroAsenjo/Integracion",
         urlWeb: "https://jeroasenjo.github.io/Integracion/"
     },
@@ -71,6 +78,7 @@ const proyects = [
         description: "",
         img: "../images/casa-del-futuro.png",
         developer: "Lorena Alenda",
+        curso: "",
         urlGitHub: "https://github.com/Lorenalenda/Generador-de-Animales",
         urlWeb: "https://lorenalenda.github.io/Generador-de-Animales/"
     },
@@ -80,6 +88,7 @@ const proyects = [
         description: "This page is about my top favorite singers and their songs ",
         img: "../images/conectar-lab.png",
         developer: "Donato Robledo",
+        curso: "",
         urlGitHub: "https://github.com/MiniDonny/My-Favorite-Singers",
         urlWeb: "https://minidonny.github.io/My-Favorite-Singers/"
     },
@@ -89,6 +98,7 @@ const proyects = [
         description: "Hice algo sobre mis cantantes favoritos tanto como su música",
         img: "../images/conectar-lab.png",
         developer: "Nicolas",
+        curso: "",
         urlGitHub: "https://github.com/MANGASNICO/nicomusic.git",
         urlWeb: "https://mangasnico.github.io/nicomusic/"
     },
@@ -98,6 +108,7 @@ const proyects = [
         description: "Lo hice yo xd",
         img: "../images/conectar-lab.png",
         developer: "Nicolas",
+        curso: "",
         urlGitHub: "https://github.com/MANGASNICO/curriculum2.git",
         urlWeb: "https://mangasnico.github.io/curriculum2/"
     },
@@ -107,10 +118,110 @@ const proyects = [
         description: "Si te ries pierdes",
         img: "../images/conectar-lab.png",
         developer: "Bruno",
+        curso: "",
         urlGitHub: "https://github.com/brunodios/Akatsuki",
         urlWeb: "https://brunodios.github.io/Akatsuki/"
     },
 ]
+
+const programacionWeb = [
+    {
+        id: 1,
+        name: "TITLE",
+        description: "description",
+        img: "../images/casa-del-futuro.png",
+        developer: "",
+        curso: "Programacion Web",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 2,
+        name: "TITLE",
+        description: "description",
+        img: "../images/casa-del-futuro.png",
+        developer: "",
+        curso: "Programacion Web",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 3,
+        name: "TITLE",
+        description: "description",
+        img: "../images/casa-del-futuro.png",
+        developer: "",
+        curso: "Programacion Web",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    
+]
+const java = [
+    {
+        id: 4,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "java",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 5,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "java",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 6,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "java",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+]
+const javaScript = [
+    {
+        id: 7,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 8,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 9,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+]
+
 
 /* Función que recorre el array */
 function renderProjects(projects, containerSelector) {
@@ -123,6 +234,7 @@ function renderProjects(projects, containerSelector) {
                 <div class="info">
                     <h2>${project.name}</h2>
                     <p>${project.description}</p>
+                    <p>Curso: ${project.curso}</p>
                     <p>Creador: ${project.developer}</p>
                     <div class="buttonera">
                         <a class="button ver-mas" key=${project.id}>Ver mas</a>
@@ -136,10 +248,13 @@ function renderProjects(projects, containerSelector) {
 }
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoProyectos
-renderProjects(proyects, ".listadoProyectos");
+renderProjects(programacionWeb, ".programacionWeb");
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
-renderProjects(topProyects, ".listadoTopProyectos");
+renderProjects(java, ".java");
+
+// Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
+renderProjects(javaScript, ".javascript");
 
 
 document.querySelector(".alert-contacto").addEventListener('click', () => {
