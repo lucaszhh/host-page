@@ -157,38 +157,7 @@ const programacionWeb = [
     },
     
 ]
-const java = [
-    {
-        id: 4,
-        name: "TITLE",
-        description: "description",
-        img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "java",
-        urlGitHub: "#",
-        urlWeb: "#"
-    },
-    {
-        id: 5,
-        name: "TITLE",
-        description: "description",
-        img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "java",
-        urlGitHub: "#",
-        urlWeb: "#"
-    },
-    {
-        id: 6,
-        name: "TITLE",
-        description: "description",
-        img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "java",
-        urlGitHub: "#",
-        urlWeb: "#"
-    },
-]
+
 const javaScript = [
     {
         id: 7,
@@ -237,7 +206,6 @@ function renderProjects(projects, containerSelector) {
                     <p>Curso: ${project.curso}</p>
                     <p>Creador: ${project.developer}</p>
                     <div class="buttonera">
-                        <a class="button ver-mas" key=${project.id}>Ver mas</a>
                         <a class="button btn2" target="_blank" href=${project.urlWeb} >Visitar sitio</a>
                         <a class="button btn1" target="_blank" href=${project.urlGitHub} ><i class="fa-brands fa-github-alt"></i></a>
                     </div>    
@@ -250,8 +218,6 @@ function renderProjects(projects, containerSelector) {
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoProyectos
 renderProjects(programacionWeb, ".programacionWeb");
 
-// Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
-renderProjects(java, ".java");
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
 renderProjects(javaScript, ".javascript");
