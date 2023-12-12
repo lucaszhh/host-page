@@ -190,6 +190,38 @@ const javaScript = [
         urlWeb: "#"
     },
 ]
+const react = [
+    {
+        id: 7,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 8,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 9,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+]
 
 
 /* Función que recorre el array */
@@ -218,6 +250,8 @@ function renderProjects(projects, containerSelector) {
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoProyectos
 renderProjects(programacionWeb, ".programacionWeb");
 
+// Llamada a la función para renderizar proyectos en el contenedor divlistadoProyectos
+renderProjects(react, ".react");
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
 renderProjects(javaScript, ".javascript");
