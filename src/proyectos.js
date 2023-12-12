@@ -1,3 +1,10 @@
+const icons = {
+    html:"fa-html5",
+    csss: "fa-css3-alt",
+    javascript:"fa-square-js",
+    react:""
+}
+
 const topProyects = [
     {
         id: 1,
@@ -175,39 +182,73 @@ const programacionWeb = [
 
 const javaScript = [
     {
-        id: 7,
-        name: "TITLE",
-        description: "description",
+        id: 1,
+        name: "Tienda de Ropa",
+        description: "Pagina web de tienda de ropa y carro de compra",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
+        developer: "Marianella Nuñez",
         curso: "javascript",
-        lenguajes: [],
+        lenguajes: [icons.html,icons.csss,icons.javascript],
+        urlGitHub: "https://github.com/Mariancita05/carrito-javascript",
+        urlWeb: "https://avleodev.github.io/JS-Carrito-MarianNunez/"
+    },
+    {
+        id: 2,
+        name: "Login | Singup",
+        description: "Registro de usuario e ingreso de sesión",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "Marianella Nuñez",
+        curso: "javascript",
+        lenguajes: [icons.html,icons.csss,icons.javascript],
+        urlGitHub: "https://github.com/Mariancita05/formulario-completo.git",
+        urlWeb: "https://avleodev.github.io/login-singup-MarianNunez/"
+    },
+    {
+        id: 3,
+        name: "Yu-Gi-Oh Card Search Application",
+        description: "Esta aplicación web aprovecha la API de Yu-Gi-Oh para proporcionar una interfaz fácil de usar para buscar y filtrar tarjetas Yu-Gi-Oh.",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "Franco Rossi",
+        curso: "javascript",
+        lenguajes: [icons.html,icons.csss,icons.javascript],
+        urlGitHub: "https://github.com/FrancoRossiDs/Proyecto-Api-Yugioh",
+        urlWeb: "https://francorossids.github.io/Proyecto-Api-Yugioh/"
+    },
+    {
+        id: 4,
+        name: "Pokedex",
+        description: "Aplicación web para busqueda de Pokemon utilizando la API pokeApi",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "Franco ",
+        curso: "javascript",
+        lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "#",
         urlWeb: "#"
     },
     {
-        id: 8,
-        name: "TITLE",
-        description: "description",
+        id: 5,
+        name: "Weather APP",
+        description: "Aplicación que permite al usuario consultar el clima en cualquier ciudad del mundo en tiempo real.",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
+        developer: "Angeles Godoy",
         curso: "javascript",
-        lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        lenguajes: [icons.html,icons.csss,icons.javascript],
+        urlGitHub: "https://github.com/AnyiGP/weather-app",
+        urlWeb: "https://anyigp.github.io/weather-app/"
     },
     {
-        id: 9,
-        name: "TITLE",
-        description: "description",
+        id: 6,
+        name: "Los Simpsons APP",
+        description: "Aplicación web que permite visualizar y buscar los personajes de los simpsons",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
+        developer: "Agustina Araujo",
         curso: "javascript",
-        lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        lenguajes: [icons.html,icons.csss,icons.javascript],
+        urlGitHub: "https://github.com/Agustina1997/Curso-de-JavaScript-Casa-del-Futuro",
+        urlWeb: "https://avleodev.github.io/los-simpons-api-AgustinaAraujo/"
     },
 ]
+
 const react = [
     {
         id: 7,
