@@ -6,6 +6,7 @@ const topProyects = [
         img: "../images/conectar-lab.png",
         developer: "Donato Robledo",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/MiniDonny/My-Portfolio",
         urlWeb: "https://minidonny.github.io/My-Portfolio/#"
     },
@@ -16,6 +17,7 @@ const topProyects = [
         img: "../images/conectar-lab.png",
         developer: "Tadeo",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/TadeoLuffi/header",
         urlWeb: "https://tadeoluffi.github.io/header/"
     },
@@ -26,6 +28,7 @@ const topProyects = [
         img: "../images/conectar-lab.png",
         developer: "Tadeo",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/TadeoLuffi/Carta-Messi",
         urlWeb: "https://tadeoluffi.github.io/Carta-Messi/"
     },
@@ -39,6 +42,7 @@ const proyects = [
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Cristian",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/Cristian7v/13_clase",
         urlWeb: "https://cristian7v.github.io/13_clase/"
     },
@@ -49,6 +53,7 @@ const proyects = [
         img: "../images/casa-del-futuro.png",
         developer: "Lucía Figueroa",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/luufigueroa8/bandafav",
         urlWeb: "https://luufigueroa8.github.io/bandafav/"
     },
@@ -59,6 +64,7 @@ const proyects = [
         img: "../images/casa-del-futuro.png",
         developer: "Lorena Alenda",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/Lorenalenda/Pequenia-Amistades",
         urlWeb: "https://lorenalenda.github.io/Pequenia-Amistades/"
     },
@@ -69,6 +75,7 @@ const proyects = [
         img: "../images/casa-del-futuro.png",
         developer: "Jerónimo",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/JeroAsenjo/Integracion",
         urlWeb: "https://jeroasenjo.github.io/Integracion/"
     },
@@ -79,6 +86,7 @@ const proyects = [
         img: "../images/casa-del-futuro.png",
         developer: "Lorena Alenda",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/Lorenalenda/Generador-de-Animales",
         urlWeb: "https://lorenalenda.github.io/Generador-de-Animales/"
     },
@@ -89,6 +97,7 @@ const proyects = [
         img: "../images/conectar-lab.png",
         developer: "Donato Robledo",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/MiniDonny/My-Favorite-Singers",
         urlWeb: "https://minidonny.github.io/My-Favorite-Singers/"
     },
@@ -99,6 +108,7 @@ const proyects = [
         img: "../images/conectar-lab.png",
         developer: "Nicolas",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/MANGASNICO/nicomusic.git",
         urlWeb: "https://mangasnico.github.io/nicomusic/"
     },
@@ -109,6 +119,7 @@ const proyects = [
         img: "../images/conectar-lab.png",
         developer: "Nicolas",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/MANGASNICO/curriculum2.git",
         urlWeb: "https://mangasnico.github.io/curriculum2/"
     },
@@ -119,6 +130,7 @@ const proyects = [
         img: "../images/conectar-lab.png",
         developer: "Bruno",
         curso: "",
+        lenguajes: [],
         urlGitHub: "https://github.com/brunodios/Akatsuki",
         urlWeb: "https://brunodios.github.io/Akatsuki/"
     },
@@ -127,31 +139,34 @@ const proyects = [
 const programacionWeb = [
     {
         id: 1,
-        name: "TITLE",
-        description: "description",
+        name: "Pequeñas Amistades",
+        description: "Página dedicada a la venta de productos",
         img: "../images/casa-del-futuro.png",
-        developer: "",
+        developer: "Lorena Alenda",
         curso: "Programacion Web",
-        urlGitHub: "#",
-        urlWeb: "#"
+        lenguajes: ["fa-html5", "fa-css3-alt"],
+        urlGitHub: "https://github.com/Lorenalenda/Pequenia-Amistades",
+        urlWeb: "https://lorenalenda.github.io/Pequenia-Amistades/"
     },
     {
         id: 2,
-        name: "TITLE",
-        description: "description",
+        name: "Hamburguesa Store",
+        description: "Página web de Hamburguesas, mostrando 3 cartas con su descripción.",
         img: "../images/casa-del-futuro.png",
-        developer: "",
+        developer: "Jerónimo",
         curso: "Programacion Web",
-        urlGitHub: "#",
-        urlWeb: "#"
+        lenguajes: ["fa-html5", "fa-css3-alt"],
+        urlGitHub: "https://github.com/JeroAsenjo/Integracion",
+        urlWeb: "https://jeroasenjo.github.io/Integracion/"
     },
     {
         id: 3,
-        name: "TITLE",
-        description: "description",
+        name: "JT-Progress",
+        description: "Sitio web de una empresa de contruccion ",
         img: "../images/casa-del-futuro.png",
-        developer: "",
+        developer: "Matias Sanchez (MFL)",
         curso: "Programacion Web",
+        lenguajes: ["fa-html5", "fa-css3-alt", "fa-square-js"],
         urlGitHub: "#",
         urlWeb: "#"
     },
@@ -166,6 +181,7 @@ const javaScript = [
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
         curso: "javascript",
+        lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
     },
@@ -176,6 +192,7 @@ const javaScript = [
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
         curso: "javascript",
+        lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
     },
@@ -186,6 +203,7 @@ const javaScript = [
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
         curso: "javascript",
+        lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
     },
@@ -198,6 +216,7 @@ const react = [
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
         curso: "javascript",
+        lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
     },
@@ -208,6 +227,7 @@ const react = [
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
         curso: "javascript",
+        lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
     },
@@ -218,6 +238,7 @@ const react = [
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
         curso: "javascript",
+        lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
     },
@@ -236,10 +257,14 @@ function renderProjects(projects, containerSelector) {
                     <h2>${project.name}</h2>
                     <p>${project.description}</p>
                     <p>Curso: ${project.curso}</p>
+                    <p>Lenguajes:</p>
+                    <div class="icons">
+                        ${project.lenguajes.map(lenguaje=> `<i class="fa-brands ${lenguaje}"></i>`).join(" ")}
+                    </div>
                     <p>Creador: ${project.developer}</p>
                     <div class="buttonera">
                         <a class="button btn2" target="_blank" href=${project.urlWeb} >Visitar sitio</a>
-                        <a class="button btn1" target="_blank" href=${project.urlGitHub} ><i class="fa-brands fa-github-alt"></i></a>
+                        <a class="button btn1" target="_blank" href=${project.urlGitHub} ><i class="fa-brands fa-github"></i></a>
                     </div>    
                 </div>
             </article>

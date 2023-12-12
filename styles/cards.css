@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     width: 75%;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 
@@ -69,13 +69,33 @@
 .card .info p {
     margin-bottom: 0;
     white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-    overflow: hidden; /* Oculta el contenido que se desborda */
+    overflow: clip; /* Oculta el contenido que se desborda */
     text-overflow: ellipsis; /* Muestra puntos suspensivos cuando el texto se corta */
 }
 
 .card.expanded .info p {
     margin-bottom: 0;
     white-space: break-spaces; /* Evita que el texto se divida en múltiples líneas */
+}
+
+.card .icons{
+    filter: drop-shadow(0px 0px 0.5px black);
+    align-self: flex-end;
+}
+
+
+.card .icons i{
+    font-size: 40px;
+}
+
+.card .icons i:nth-child(1){
+    color: orangered;
+}
+.card .icons i:nth-child(2), .card .icons i:nth-child(4){
+    color: #09f;
+}
+.card .icons i:nth-child(3){
+    color: yellow;
 }
 
 .card .buttonera{

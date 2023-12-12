@@ -1,72 +1,117 @@
-.bannerText{
+.banner {
+    background: rgb(128, 0, 128);
+    background: radial-gradient(circle, rgba(128, 0, 128, 1) 45%, rgba(87, 0, 87, 0.7596288515406162) 70%, rgba(59, 0, 59, 0.8352591036414566) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    animation: pulse 1s infinite;
+    width: 60%;
+    max-width: 500px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+.bannerText {
     color: var(--color-terciario);
     background-color: #000;
     padding: 16px;
     font-size: 50px;
 }
 
-
-.title1{
+.title1 {
     animation: title1 2s infinite ease-in;
 }
-.title2{
+
+.title2 {
     animation: title2 2s infinite ease-in;
 }
-.title3{
+
+.title3 {
     animation: title3 2s infinite ease-in;
 }
 
-@keyframes title1{
-    0%{}
-    25%{
-        text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
+@keyframes pulse {
+    0% {
+        transform: translateY(0);
     }
-    100%{}
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
-@keyframes title2{
-    0%{}
-    50%{
+
+@keyframes title1 {
+    0% {}
+
+    25% {
         text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
     }
-    100%{}
+
+    100% {}
 }
-@keyframes title3{
-    0%{}
-    75%{
+
+@keyframes title2 {
+    0% {}
+
+    50% {
         text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
     }
-    100%{}
+
+    100% {}
+}
+
+@keyframes title3 {
+    0% {}
+
+    75% {
+        text-shadow: 8px 8px 0px var(--color-sombra-primario), -8px -8px 0px var(--color-sombra-secundario);
+    }
+
+    100% {}
 }
 
 /* Consulta de medios para dispositivos móviles */
 @media (max-width: 768px) {
-    .bannerText{
+    .bannerText {
         text-align: center;
         padding: 4px;
     }
-    @keyframes title1{
-        0%{}
-        25%{
+
+    @keyframes title1 {
+        0% {}
+
+        25% {
             text-shadow: 4px 4px 0px var(--color-sombra-primario), -4px -4px 0px var(--color-sombra-secundario);
         }
-        100%{}
+
+        100% {}
     }
-    @keyframes title2{
-        0%{}
-        50%{
+
+    @keyframes title2 {
+        0% {}
+
+        50% {
             text-shadow: 4px 4px 0px var(--color-sombra-primario), -4px -4px 0px var(--color-sombra-secundario);
         }
-        100%{}
+
+        100% {}
     }
-    @keyframes title3{
-        0%{}
-        75%{
+
+    @keyframes title3 {
+        0% {}
+
+        75% {
             text-shadow: 4px 4px 0px var(--color-sombra-primario), -4px -4px 0px var(--color-sombra-secundario);
         }
-        100%{}
+
+        100% {}
     }
-    
+
 }
-
-
-
