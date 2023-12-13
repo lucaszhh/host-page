@@ -221,7 +221,7 @@ const javaScript = [
         description: "Pagina web de tienda de ropa y carro de compra",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Marianella Nuñez",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "https://github.com/Mariancita05/carrito-javascript",
         urlWeb: "https://avleodev.github.io/JS-Carrito-MarianNunez/"
@@ -232,7 +232,7 @@ const javaScript = [
         description: "Registro de usuario e ingreso de sesión",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Marianella Nuñez",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "https://github.com/Mariancita05/formulario-completo.git",
         urlWeb: "https://avleodev.github.io/login-singup-MarianNunez/"
@@ -243,7 +243,7 @@ const javaScript = [
         description: "Esta aplicación web aprovecha la API de Yu-Gi-Oh para proporcionar una interfaz fácil de usar para buscar y filtrar tarjetas Yu-Gi-Oh.",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Franco Rossi",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "https://github.com/FrancoRossiDs/Proyecto-Api-Yugioh",
         urlWeb: "https://francorossids.github.io/Proyecto-Api-Yugioh/"
@@ -254,7 +254,7 @@ const javaScript = [
         description: "Aplicación web para busqueda de Pokemon utilizando la API pokeApi",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Franco ",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "#",
         urlWeb: "#"
@@ -265,7 +265,7 @@ const javaScript = [
         description: "Aplicación que permite al usuario consultar el clima en cualquier ciudad del mundo en tiempo real.",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Angeles Godoy",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "https://github.com/AnyiGP/weather-app",
         urlWeb: "https://anyigp.github.io/weather-app/"
@@ -276,7 +276,7 @@ const javaScript = [
         description: "Aplicación web que permite visualizar y buscar los personajes de los simpsons",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "Agustina Araujo",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "https://github.com/Agustina1997/Curso-de-JavaScript-Casa-del-Futuro",
         urlWeb: "https://avleodev.github.io/los-simpons-api-AgustinaAraujo/"
@@ -290,7 +290,7 @@ const react = [
         description: "description",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
@@ -301,7 +301,7 @@ const react = [
         description: "description",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
@@ -312,7 +312,7 @@ const react = [
         description: "description",
         img: "../images/escuela-de-programacion-horizontal.png",
         developer: "",
-        curso: "javascript",
+        curso: "JavaScript",
         lenguajes: [],
         urlGitHub: "#",
         urlWeb: "#"
@@ -322,36 +322,36 @@ const react = [
 const uxui = [
     {
         id: 7,
-        name: "TITLE",
-        description: "description",
+        name: "Cine Teatro Plaza",
+        description: "Diseño app para Cine Teatro Plaza",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "javascript",
+        developer: "Carolina Zangrandi",
+        curso: "Diseño UX/UI",
         lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        urlGitHub: "https://www.figma.com/proto/zRQ3bDVAQ4sh9s0J0tCbEQ/Wireframes-Teatro-Plaza?node-id=54-2229",
+        urlWeb: "https://www.behance.net/gallery/181564577/Cine-Teatro-Plaza-App"
     },
     {
         id: 8,
-        name: "TITLE",
-        description: "description",
+        name: "Parking APP",
+        description: "Diseño app de Parking",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "javascript",
+        developer: "Emiliana Notti",
+        curso: "Diseño UX/UI",
         lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        urlGitHub: "https://www.figma.com/proto/GuLtnS9ZgjBPb3FLvXrJzA",
+        urlWeb: "https://www.behance.net/gallery/181547565/Parking-App"
     },
     {
         id: 9,
-        name: "TITLE",
-        description: "description",
+        name: "Casa del Futuro",
+        description: "Diseño app para Casa del Futuro",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "javascript",
+        developer: "Candela Aguirre Ruppel",
+        curso: "Diseño UX/UI",
         lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        urlGitHub: "https://www.figma.com/proto/0pXKP3FWhTEsvSBfDdzUsX/Wireframes?node-id=724-935&starting-point-node-id=724%3A935",
+        urlWeb: "https://www.behance.net/gallery/181566737/Casa-del-Futuro-App"
     },
 ]
 
@@ -385,6 +385,29 @@ function renderProjects(projects, containerSelector) {
     });
 }
 
+function renderProjectsDisenio(projects, containerSelector) {
+    const container = document.querySelector(containerSelector);
+
+    projects.forEach((project) => {
+        container.innerHTML += `
+            <article class="card" key=${project.id}>
+                <img src=${project.img} alt="Imagen del proyecto">
+                <div class="info">
+                    <h2>${project.name}</h2>
+                    <p>${project.description}</p>
+                    <p>Curso: ${project.curso}</p>
+                    <p>Creador: ${project.developer}</p>
+                    <div class="buttonera">
+                        <a class="button btn2" target="_blank" href=${project.urlWeb} >Visitar sitio</a>
+                        <a class="button btn1" target="_blank" href=${project.urlGitHub} ><i class="fa-brands fa-figma"></i></a>
+                    </div>    
+                </div>
+            </article>
+        `;
+    });
+}
+
+
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoProyectos
 renderProjects(programacionWeb, ".programacionWeb");
 
@@ -395,7 +418,7 @@ renderProjects(react, ".react");
 renderProjects(javaScript, ".javascript");
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
-renderProjects(uxui, ".uxui");
+renderProjectsDisenio(uxui, ".uxui");
 
 
 document.querySelector(".alert-contacto").addEventListener('click', () => {
