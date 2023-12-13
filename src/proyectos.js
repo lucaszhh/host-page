@@ -1,11 +1,4 @@
-const icons = {
-    html:"fa-html5",
-    csss: "fa-css3-alt",
-    javascript:"fa-square-js",
-    react:""
-}
-
-const topProyects = [
+/* const topProyects = [
     {
         id: 1,
         name: "Portfolio",
@@ -141,7 +134,16 @@ const proyects = [
         urlGitHub: "https://github.com/brunodios/Akatsuki",
         urlWeb: "https://brunodios.github.io/Akatsuki/"
     },
-]
+] */
+
+
+const icons = {
+    html:"fa-html5",
+    csss: "fa-css3-alt",
+    javascript:"fa-square-js",
+    react:"fa-react"
+}
+
 
 const programacionWeb = [
     {
@@ -177,7 +179,39 @@ const programacionWeb = [
         urlGitHub: "#",
         urlWeb: "#"
     },
-    
+    {
+        id: 4,
+        name: "SevenBits",
+        description: "Mi primera pagina web para mi emprendimiento de creador de videojuegos",
+        img: "../images/casa-del-futuro.png",
+        developer: "Gonzalo Sayavedra",
+        curso: "Programacion Web",
+        lenguajes: ["fa-html5", "fa-css3-alt", "fa-square-js"],
+        urlGitHub: "https://github.com/GonzaloADM/pagina_web",
+        urlWeb: "https://gonzaloadm.github.io/pagina_web/"
+    },
+    {
+        id: 5,
+        name: "Insutria Metalurgica Ruiz",
+        description: "Trata de una pagina comercial para un taller de metalurgica",
+        img: "../images/casa-del-futuro.png",
+        developer: "Alejo Ruiz",
+        curso: "Programacion Web",
+        lenguajes: ["fa-html5", "fa-css3-alt"],
+        urlGitHub: "https://github.com/Alejo-Ruiz04/new-pag",
+        urlWeb: "https://alejo-ruiz04.github.io/new-pag/"
+    },
+    {
+        id: 6,
+        name: "My first porfolio",
+        description: "Es un portafolio para guardar los proyectos que haga de programación y diseño UX",
+        img: "../images/casa-del-futuro.png",
+        developer: "Lucas Galimberti",
+        curso: "Programacion Web",
+        lenguajes: ["fa-html5", "fa-css3-alt"],
+        urlGitHub: "https://github.com/Lucasari24/my-first-porfolio24",
+        urlWeb: "https://lucasari24.github.io/my-first-porfolio24/"
+    },
 ]
 
 const javaScript = [
@@ -285,6 +319,44 @@ const react = [
     },
 ]
 
+const uxui = [
+    {
+        id: 7,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        lenguajes: [],
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 8,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        lenguajes: [],
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+    {
+        id: 9,
+        name: "TITLE",
+        description: "description",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "",
+        curso: "javascript",
+        lenguajes: [],
+        urlGitHub: "#",
+        urlWeb: "#"
+    },
+]
+
+
+
 
 /* Función que recorre el array */
 function renderProjects(projects, containerSelector) {
@@ -321,6 +393,9 @@ renderProjects(react, ".react");
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
 renderProjects(javaScript, ".javascript");
+
+// Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
+renderProjects(uxui, ".uxui");
 
 
 document.querySelector(".alert-contacto").addEventListener('click', () => {
