@@ -23,3 +23,19 @@ footer nav.navSocial i:hover{
     color: var(--color-terciario);
     text-shadow: 2px 2px 2px var(--color-primario);
 }
+
+.footer .me{
+    background-color:black;
+    padding: 8px;
+    color: white;
+}
+
+.me a{
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    footer .me{
+        text-align: center;
+    }
+}

@@ -141,7 +141,8 @@ const icons = {
     html:"fa-html5",
     csss: "fa-css3-alt",
     javascript:"fa-square-js",
-    react:"fa-react"
+    react:"fa-react",
+    unity:"fa-unity"
 }
 
 
@@ -257,7 +258,7 @@ const javaScript = [
         curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "https://github.com/Garethjr/ProyecFinalAPi",
-        urlWeb: "https://avleodev.github.io/PokeAPi-FrancoVillarroel/"
+        urlWeb: "https://avleodev.github.io/PokeAPi-FrancoVillarroel/pokemon.html"
     },
     {
         id: 5,
@@ -301,7 +302,7 @@ const javaScript = [
         curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "#",
-        urlWeb: "https://pryecto-final-js-movieapp.vercel.app/"
+        urlWeb: "https://proyecto-final-js-cdf-movieapp.vercel.app/login/login.html"
     },
 ]
 
@@ -376,6 +377,75 @@ const uxui = [
         urlWeb: "https://www.behance.net/gallery/181566737/Casa-del-Futuro-App"
     },
 ]
+const unity = [
+    {
+        id: 7,
+        name: "Pixel Hero",
+        description: "Videojuego desarrollado en la Casa del Futuro",
+        img: "../images/casa-del-futuro.png",
+        developer: "Lanternest",
+        curso: "Unity",
+        lenguajes: [icons.unity],
+        urlGitHub: "",
+        urlWeb: "https://eluchon.itch.io/pixel-hero"
+    },
+    {
+        id: 8,
+        name: "Robotin",
+        description: "Videojuego desarrollado en la Casa del Futuro",
+        img: "../images/casa-del-futuro.png",
+        developer: "LeanCh",
+        curso: "Unity",
+        lenguajes: [icons.unity],
+        urlGitHub: "",
+        urlWeb: "https://eluchon.itch.io/leanch"
+    },
+    {
+        id: 9,
+        name: "The Phantom",
+        description: "Videojuego desarrollado en la Casa del Futuro",
+        img: "../images/casa-del-futuro.png",
+        developer: "Ignacio",
+        curso: "Unity",
+        lenguajes: [icons.unity],
+        urlGitHub: "",
+        urlWeb: "https://eluchon.itch.io/ignacio"
+    },
+    {
+        id: 10,
+        name: "Planicie",
+        description: "Videojuego desarrollado en la Casa del Futuro",
+        img: "../images/casa-del-futuro.png",
+        developer: "Ezequiel",
+        curso: "Unity",
+        lenguajes: [icons.unity],
+        urlGitHub: "",
+        urlWeb: "https://eluchon.itch.io/ezequiel"
+    },
+    {
+        id: 11,
+        name: "Dino Adventure",
+        description: "Videojuego desarrollado en la Casa del Futuro",
+        img: "../images/casa-del-futuro.png",
+        developer: "Lu Bernard",
+        curso: "Unity",
+        lenguajes: [icons.unity],
+        urlGitHub: "",
+        urlWeb: "https://eluchon.itch.io/lu-bernard"
+    },
+/*     {
+        id: 12,
+        name: "Dino Adventure",
+        description: "Videojuego desarrollado en la Casa del Futuro",
+        img: "../images/casa-del-futuro.png",
+        developer: "Lu Bernard",
+        curso: "Unity",
+        lenguajes: [icons.unity],
+        urlGitHub: "",
+        urlWeb: "https://eluchon.itch.io/lu-bernard"
+    }, */
+
+]
 
 
 
@@ -407,7 +477,7 @@ function renderProjects(projects, containerSelector) {
     });
 }
 
-function renderProjectsDisenio(projects, containerSelector) {
+function renderProjectsUnity(projects, containerSelector) {
     const container = document.querySelector(containerSelector);
 
     projects.forEach((project) => {
@@ -418,10 +488,14 @@ function renderProjectsDisenio(projects, containerSelector) {
                     <h2>${project.name}</h2>
                     <p>${project.description}</p>
                     <p>Curso: ${project.curso}</p>
+                    <p>Lenguajes:</p>
+                    <div class="icons">
+                         <i class="fa-brands fa-unity"></i>
+                         <img src="./images/csharp.png" alt="csharp">
+                    </div>
                     <p>Creador: ${project.developer}</p>
                     <div class="buttonera">
-                        <a class="button btn2" target="_blank" href=${project.urlWeb} >Visitar sitio</a>
-                        <a class="button btn1" target="_blank" href=${project.urlGitHub} ><i class="fa-brands fa-figma"></i></a>
+                        <a class="button btn2 btn-unity" target="_blank" href=${project.urlWeb} >VICIAR JUEGO</a>
                     </div>    
                 </div>
             </article>
@@ -440,7 +514,10 @@ renderProjects(react, ".react");
 renderProjects(javaScript, ".javascript");
 
 // Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
+renderProjectsUnity(unity, ".unity");
+// Llamada a la función para renderizar proyectos en el contenedor divlistadoTopProyectos
 renderProjectsDisenio(uxui, ".uxui");
+
 
 
 document.querySelector(".alert-contacto").addEventListener('click', () => {
