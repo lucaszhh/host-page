@@ -256,8 +256,8 @@ const javaScript = [
         developer: "Franco ",
         curso: "JavaScript",
         lenguajes: [icons.html,icons.csss,icons.javascript],
-        urlGitHub: "#",
-        urlWeb: "#"
+        urlGitHub: "https://github.com/Garethjr/ProyecFinalAPi",
+        urlWeb: "https://avleodev.github.io/PokeAPi-FrancoVillarroel/"
     },
     {
         id: 5,
@@ -291,6 +291,17 @@ const javaScript = [
         lenguajes: [icons.html,icons.csss,icons.javascript],
         urlGitHub: "https://github.com/LautaroEmanuelG/WikiGameOfThrones",
         urlWeb: "https://wiki-game-of-thrones.vercel.app/"
+    },
+    {
+        id: 8,
+        name: "Movie APP",
+        description: "Proyecto hecho con javascript nativo, consumo 2 APIS de game of thrones, una de frases y otra de personajes, con la de frase presento en la presentacion de la pagina se puede recargar la frase para conocer otras, con los personajes presento un carrousel de 5 personajes al azar , tambien hay un Buscar personaje que trae el personaje buscado si lo encuentra, finalmente mapeo todos los personajes de la api es un galeria, con flex-box.",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "Lucas M. Nuñez",
+        curso: "JavaScript",
+        lenguajes: [icons.html,icons.csss,icons.javascript],
+        urlGitHub: "#",
+        urlWeb: "https://pryecto-final-js-movieapp.vercel.app/"
     },
 ]
 
