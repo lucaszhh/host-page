@@ -1,9 +1,9 @@
-.containerListadoProyectos{
+.containerListadoProyectos {
     display: flex;
     justify-content: center;
 }
 
-.listadoProyectos{
+.listadoProyectos {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -26,15 +26,15 @@
     font-weight: bold;
 }
 
-.expanded{
+.expanded {
     width: 750px;
     flex-direction: row;
 }
 
 .card:hover {
-    box-shadow: 8px 8px 0px var(--color-sombra-secundario) , 
-    16px 16px 0px var(--color-sombra-primario);
-    transform: scale(1.03) translate(-8px,-8px);
+    box-shadow: 8px 8px 0px var(--color-sombra-secundario),
+        16px 16px 0px var(--color-sombra-primario);
+    transform: scale(1.03) translate(-8px, -8px);
 }
 
 .card img {
@@ -45,7 +45,7 @@
     object-fit: contain;
 }
 
-.card.expanded img{
+.card.expanded img {
     width: 40%;
 }
 
@@ -56,53 +56,63 @@
     gap: 8px;
     margin: 8px;
     padding: 8px;
-    
+
 }
 
 .card .info h2 {
     margin-top: 0;
-    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-    overflow: hidden; /* Oculta el contenido que se desborda */
-    text-overflow: ellipsis; /* Muestra puntos suspensivos cuando el texto se corta */
+    white-space: nowrap;
+    /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis;
+    /* Muestra puntos suspensivos cuando el texto se corta */
 }
 
 .card .info p {
     margin-bottom: 0;
-    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-    overflow: clip; /* Oculta el contenido que se desborda */
-    text-overflow: ellipsis; /* Muestra puntos suspensivos cuando el texto se corta */
+    white-space: nowrap;
+    /* Evita que el texto se divida en múltiples líneas */
+    overflow: clip;
+    /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis;
+    /* Muestra puntos suspensivos cuando el texto se corta */
 }
 
 .card.expanded .info p {
     margin-bottom: 0;
-    white-space: break-spaces; /* Evita que el texto se divida en múltiples líneas */
+    white-space: break-spaces;
+    /* Evita que el texto se divida en múltiples líneas */
 }
 
-.card .icons{
+.card .icons {
     filter: drop-shadow(0px 0px 0.5px black);
     align-self: flex-end;
 }
 
 
-.card .icons i{
+.card .icons i {
     font-size: 40px;
 }
 
-.card .icons i:nth-child(1){
+.card .icons i:nth-child(1) {
     color: orangered;
 }
-.card .icons i:nth-child(2), .card .icons i:nth-child(4){
+
+.card .icons i:nth-child(2),
+.card .icons i:nth-child(4) {
     color: #09f;
 }
-.card .icons i:nth-child(3){
+
+.card .icons i:nth-child(3) {
     color: yellow;
 }
 
-.card .buttonera{
+.card .buttonera {
     display: flex;
     gap: 16px;
     justify-content: space-between;
-} 
+}
 
 .card .button {
     text-align: center;
@@ -127,46 +137,94 @@
     box-shadow: 0px 5px 0px black;
 }
 
-.card .button:active{
+.card .button:active {
     box-shadow: none;
-    transform: translate(2px,2px);
+    transform: translate(2px, 2px);
     background-color: var(--color-primario);
 }
 
-.card .button i{
+.card .button i {
     font-size: 30px;
     cursor: pointer;
 }
 
 
+.diseños {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    grid-gap: 32px;
+    width: 75%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.diseños iframe:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 3;
+    height: 800px
+}
+
+
+/* .diseños iframe:nth-child(1),
+.diseños iframe:nth-child(2){
+    grid-column-start: span 1;
+}
+
+.diseños iframe:nth-child(2){
+    grid-column-start: span 2;
+} */
+
+
+.diseños iframe {
+    width: 100%;
+    height: 500px;
+    filter: drop-shadow(5px 0px 0px black)drop-shadow(-5px 0px 0px black) drop-shadow(0px 5px 0px black) drop-shadow(0px -5px 0px black);
+}
+
+
 /* Consulta de medios para dispositivos móviles */
 @media (max-width: 800px) {
-    .card{
+    .card {
         width: 100%;
         max-width: 350px;
     }
-    .expanded{
+
+    .expanded {
         width: 100%;
         flex-direction: column;
     }
-    .card.expanded img{
+
+    .card.expanded img {
         width: 100%;
     }
-    .card .buttonera{
+
+    .card .buttonera {
         gap: 4px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .card .button.btn1{
+
+    .card .button.btn1 {
         width: 33%;
     }
-    .card .button.btn2{
+
+    .card .button.btn2 {
         width: 65%;
     }
+
+    .diseños {
+        display: flex;
+        flex-direction: column;
+    }
+    .diseños iframe, .diseños iframe:nth-child(3){
+        width: 100%;
+        height: 200px;
+    }
+
 }
+
 @media (max-width: 319px) {
-    .card .button.btn1{
+    .card .button.btn1 {
         width: 32%;
     }
 }
-

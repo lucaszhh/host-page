@@ -281,41 +281,52 @@ const javaScript = [
         urlGitHub: "https://github.com/Agustina1997/Curso-de-JavaScript-Casa-del-Futuro",
         urlWeb: "https://avleodev.github.io/los-simpons-api-AgustinaAraujo/"
     },
+    {
+        id: 7,
+        name: "WikiGameOfThrones",
+        description: "Proyecto hecho con javascript nativo, consumo 2 APIS de game of thrones, una de frases y otra de personajes, con la de frase presento en la presentacion de la pagina se puede recargar la frase para conocer otras, con los personajes presento un carrousel de 5 personajes al azar , tambien hay un Buscar personaje que trae el personaje buscado si lo encuentra, finalmente mapeo todos los personajes de la api es un galeria, con flex-box.",
+        img: "../images/escuela-de-programacion-horizontal.png",
+        developer: "Lautaro Emanuel Gonzalez",
+        curso: "JavaScript",
+        lenguajes: [icons.html,icons.csss,icons.javascript],
+        urlGitHub: "https://github.com/LautaroEmanuelG/WikiGameOfThrones",
+        urlWeb: "https://wiki-game-of-thrones.vercel.app/"
+    },
 ]
 
 const react = [
     {
         id: 7,
-        name: "TITLE",
-        description: "description",
+        name: "Cart Storage",
+        description: "Tienda de productos",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "JavaScript",
-        lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        developer: "Angeles Godoy",
+        curso: "React JS",
+        lenguajes: [icons.html,icons.csss,icons.javascript,icons.react],
+        urlGitHub: "https://github.com/AnyiGP/context-cart",
+        urlWeb: "https://context-cart-iota.vercel.app/"
     },
     {
         id: 8,
-        name: "TITLE",
-        description: "description",
+        name: "Los Simpsons",
+        description: "Fanpage de Los Simpsons",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "JavaScript",
-        lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        developer: "Marianella Nuñez",
+        curso: "React JS",
+        lenguajes: [icons.html,icons.csss,icons.javascript,icons.react],
+        urlGitHub: "https://github.com/Mariancita05/Proyecto-Final-React-CDF",
+        urlWeb: "https://proyecto-final-react-cdf.netlify.app/"
     },
     {
         id: 9,
-        name: "TITLE",
-        description: "description",
+        name: "Springfield City",
+        description: "Una web desarollada con react, aplicamos los conocimientos adquiridos en el curso, se consume una API de los simpsons, para presentar a los personajes, posee paginacion, un buscador, y un mostrador de personajes al azar",
         img: "../images/escuela-de-programacion-horizontal.png",
-        developer: "",
-        curso: "JavaScript",
-        lenguajes: [],
-        urlGitHub: "#",
-        urlWeb: "#"
+        developer: "Lautaro Emanuel Gonzalez",
+        curso: "React JS",
+        lenguajes: [icons.html,icons.csss,icons.javascript,icons.react],
+        urlGitHub: "https://github.com/LautaroEmanuelG/SpringfieldCity",
+        urlWeb: "https://springfield-city.vercel.app/"
     },
 ]
 
