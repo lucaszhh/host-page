@@ -433,17 +433,17 @@ const unity = [
         urlGitHub: "",
         urlWeb: "https://eluchon.itch.io/lu-bernard"
     },
-/*     {
+    {
         id: 12,
-        name: "Dino Adventure",
+        name: "Joakin",
         description: "Videojuego desarrollado en la Casa del Futuro",
         img: "../images/casa-del-futuro.png",
-        developer: "Lu Bernard",
+        developer: "Joaquin",
         curso: "Unity",
         lenguajes: [icons.unity],
         urlGitHub: "",
-        urlWeb: "https://eluchon.itch.io/lu-bernard"
-    }, */
+        urlWeb: "https://eluchon.itch.io/joakin"
+    },
 
 ]
 
